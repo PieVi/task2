@@ -2,12 +2,12 @@
 
 import argparse
 
-def parse_arguments():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('num', type=int, help='the number the fizzbuzz range will be')
-    return parser.parse_args()
+# def parse_arguments():
+#     parser = argparse.ArgumentParser()
+#     parser.add_argument('num', type=int, help='the number the fizzbuzz range will be')
+#     return parser.parse_args()
 
-args = parse_arguments()
+# args = parse_arguments()
 
 def fizz_buzz(num):
     for i in range(num):
@@ -32,7 +32,6 @@ def fizz_buzz_generator(num):
             yield 'buzz'
         else:
             yield i
-
 
 
 
