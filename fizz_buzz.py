@@ -32,8 +32,7 @@ def fizz_buzz_generator(num):
             yield i+1
 
 
-gen = fizz_buzz_generator(args.num)
-next(gen)
-next(gen)
-next(gen)
+for item in fizz_buzz_generator(args.num):
+    print(item)
+
 
