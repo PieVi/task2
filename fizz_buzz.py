@@ -21,19 +21,18 @@ def fizz_buzz(num):
             print(i+1)
 
 def fizz_buzz_generator(num):
-    for i in range(num):
-        if (i+1)%3==0 and (i+1)%5==0:
+    i=0
+    while i<=num:
+        i+=1
+        if i%3==0 and i%5==0:
             yield 'fizzbuzz'
-        elif (i+1)%3==0:
+        elif i%3==0:
             yield 'fizz'
-        elif (i+1)%5==0:
+        elif i%5==0:
             yield 'buzz'
         else:
-            yield i+1
+            yield i
 
 
-gen = fizz_buzz_generator(args.num)
-next(gen)
-next(gen)
-next(gen)
+
 
